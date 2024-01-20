@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 categories: assembly
 title: Intel 64 and IA-32 Architectures Manual
 ---

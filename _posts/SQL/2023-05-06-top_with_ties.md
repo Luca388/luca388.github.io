@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 categories: SQL
 tags: MSSQL
 title:  top 함수와 top with ties 함수[MSSQL]

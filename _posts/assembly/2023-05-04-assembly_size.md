@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 categories: assembly
 tags: x86
 title: assembly data type

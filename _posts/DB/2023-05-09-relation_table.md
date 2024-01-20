@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 categories: DB
 tags: relation
 title: relation 과 table

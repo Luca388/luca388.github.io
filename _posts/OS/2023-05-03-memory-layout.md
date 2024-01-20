@@ -1,6 +1,6 @@
 ---
-layout: post
-titile: Memory layout
+layout: single
+layout: single
 categories: OS
 tags: memory
 ---

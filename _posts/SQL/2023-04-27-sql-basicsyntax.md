@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 categories: SQL
 tags: sql
 title: SQL 기본 문법
