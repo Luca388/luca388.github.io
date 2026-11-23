@@ -18,7 +18,7 @@ const bundle = url('/pagefind/');
 			await import(`${bundle}pagefind-ui.js`);
 			new PagefindUI({
 				element: '#search',
-				// both must be explicit because the site lives under /blog/
+				// both explicit, so search keeps working if the site ever moves under a base path
 				bundlePath: bundle,
 				baseUrl,
 				showSubResults: true,

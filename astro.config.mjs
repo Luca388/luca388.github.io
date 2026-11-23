@@ -8,7 +8,6 @@ import { withMarkdownFixes } from './src/lib/markdown-fixes.mjs';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://luca388.github.io',
-	base: '/blog',
 	trailingSlash: 'always',
 	integrations: [sitemap()],
 	// No Astro toolbar at the bottom of pages on the local dev server.

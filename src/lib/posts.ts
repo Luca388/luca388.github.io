@@ -70,14 +70,14 @@ function resolve(entry: Entry): Post {
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
-/** Prefix a site-relative path with the configured base (`/blog`). */
+/** Prefix a site-relative path with the configured base (none now; the site is at the root). */
 export const url = (path: string) => `${base}${path}`;
 
 /** URL keys for category and tag pages. */
 export const categoryKey = (category: string) => category.toLowerCase().replace(/[\s/]+/g, '-');
 export const tagKey = (tag: string) => tag.toLowerCase().replace(/\s+/g, '-');
 
-/** Posts live at /blog/<slug>/, independent of their folder, so regrouping never breaks links. */
+/** Posts live at /<slug>/, independent of their folder, so regrouping never breaks links. */
 export const postUrl = (post: Post) => url(`/${post.data.slug}/`);
 
 /** Top-level paths used by other pages; a post with one of these slugs would be shadowed. */
@@ -93,6 +93,7 @@ export const RESERVED_SLUGS = [
 	'rss.xml',
 	'pagefind',
 	'_astro',
+	'blog', // old /blog/... addresses, redirected by scripts/legacy-redirects.mjs
 ];
 
 /** The start of the body as plain text, for previews. */

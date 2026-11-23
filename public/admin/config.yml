@@ -1,8 +1,8 @@
-# Web editor at /blog/admin/ (Sveltia CMS). Saving commits to main, which deploys the site.
+# Web editor at /admin/ (Sveltia CMS). Saving commits to main, which deploys the site.
 # Sign in with a GitHub token that can write to this repo; nobody else can save.
 backend:
   name: github
-  repo: Luca388/blog
+  repo: Luca388/luca388.github.io
   branch: main
   commit_messages:
     create: "{{slug}} 추가"
@@ -14,9 +14,9 @@ backend:
 # Look: name and logo on the sign-in page and header, and the "view site" link.
 app_title: "Luca's development diary · 글쓰기"
 logo:
-  src: /blog/favicon.svg
-site_url: https://luca388.github.io/blog
-display_url: https://luca388.github.io/blog/
+  src: /favicon.svg
+site_url: https://luca388.github.io
+display_url: https://luca388.github.io/
 
 # Images go to posts/images/. The links posts use (../images/<file>, same as images pasted in
 # VS Code/Obsidian) are set per collection, since relative paths are only allowed there.
